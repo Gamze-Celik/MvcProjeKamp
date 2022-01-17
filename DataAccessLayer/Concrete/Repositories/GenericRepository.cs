@@ -27,7 +27,7 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public void Insert(T p)
         {
-            _object.Remove(p);
+            _object.Add(p);
             c.SaveChanges();
         }
 
